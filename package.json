@@ -1,0 +1,61 @@
+{
+  "name": "tailwindjs",
+  "description": "Tailwind Traders FeathersJS API",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "api",
+  "keywords": [
+    "feathers",
+    "tailwind"
+  ],
+  "author": {
+    "name": "Rob Conery",
+    "email": "rob@conery.io"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "api",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test npm run mocha",
+    "eslint": "eslint api/. test/. --config .eslintrc.json",
+    "dev": "nodemon api/",
+    "start": "node api/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.6",
+    "@feathersjs/errors": "^3.3.6",
+    "@feathersjs/express": "^1.3.1",
+    "@feathersjs/feathers": "^3.3.1",
+    "@feathersjs/socketio": "^3.2.9",
+    "async-redis": "^1.1.7",
+    "azure-storage": "^2.10.3",
+    "azure-table-storage-async": "^1.3.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dinero.js": "^1.6.0",
+    "dotenv": "^7.0.0",
+    "helmet": "^3.16.0",
+    "moment": "^2.24.0",
+    "redis": "^2.8.0",
+    "serve-favicon": "^2.5.0",
+    "shortid": "^2.2.14",
+    "stripe": "^6.29.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
